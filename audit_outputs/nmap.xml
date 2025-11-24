@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Fri Nov 21 06:05:13 2025 as: /usr/lib/nmap/nmap -sS -sV -p- -&#45;script=http-title,http-headers -oA audit_outputs/nmap srmap.edu.in -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sS -sV -p- -&#45;script=http-title,http-headers -oA audit_outputs/nmap srmap.edu.in" start="1763723113" startstr="Fri Nov 21 06:05:13 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="15.207.40.200" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srmap.edu.in" type="user"/>
+</hostnames>
+</hosthint>
+<host starttime="1763723114" endtime="1763724128"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="15.207.40.200" addrtype="ipv4"/>
+<hostnames>
+<hostname name="srmap.edu.in" type="user"/>
+<hostname name="ec2-15-207-40-200.ap-south-1.compute.amazonaws.com" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-79,81-442,444-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="AWS Elastic Load Balancing" method="probed" conf="10"/><script id="http-server-header" output="awselb/2.0"><elem>awselb/2.0</elem>
+</script><script id="http-headers" output="&#xa;  Server: awselb/2.0&#xa;  Date: Fri, 21 Nov 2025 11:22:06 GMT&#xa;  Content-Type: text/html&#xa;  Content-Length: 134&#xa;  Connection: close&#xa;  Location: https://srmap.edu.in:443/&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-title" output="Did not follow redirect to https://srmap.edu.in:443/"><elem key="redirect_url">https://srmap.edu.in:443/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="Apache httpd" version="2.4.62" extrainfo="(CentOS Stream) OpenSSL/3.5.1 PHP/8.2.29" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.62</cpe></service><script id="http-title" output="Did not follow redirect to https://www.srmap.edu.in/"><elem key="redirect_url">https://www.srmap.edu.in/</elem>
+</script><script id="http-headers" output="&#xa;  Date: Fri, 21 Nov 2025 11:22:06 GMT&#xa;  Content-Type: text/html; charset=UTF-8&#xa;  Content-Length: 0&#xa;  Connection: close&#xa;  Server: Apache/2.4.62 (CentOS Stream) OpenSSL/3.5.1 PHP/8.2.29&#xa;  X-Powered-By: PHP/8.2.29&#xa;  X-Redirect-By: WordPress&#xa;  Location: https://www.srmap.edu.in/&#xa;  Cache-Control: max-age=0, s-maxage=2592000&#xa;  Expires: Fri, 21 Nov 2025 11:22:06 GMT&#xa;  &#xa;  (Request type: GET)&#xa;"/><script id="http-server-header" output="Apache/2.4.62 (CentOS Stream) OpenSSL/3.5.1 PHP/8.2.29"><elem>Apache/2.4.62 (CentOS Stream) OpenSSL/3.5.1 PHP/8.2.29</elem>
+</script></port>
+</ports>
+<times srtt="20157" rttvar="28183" to="132889"/>
+</host>
+<runstats><finished time="1763724128" timestr="Fri Nov 21 06:22:08 2025" summary="Nmap done at Fri Nov 21 06:22:08 2025; 1 IP address (1 host up) scanned in 1014.29 seconds" elapsed="1014.29" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

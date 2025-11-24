@@ -1,0 +1,8 @@
+Security Header Analysis Report
+----------------------------------
+[!] Missing Strict-Transport-Security (HSTS)
+[!] Missing Content-Security-Policy (CSP)
+[!] Missing X-Frame-Options (Clickjacking Protection)
+[!] Missing X-Content-Type-Options (MIME Sniffing Protection)
+[!] Missing Referrer-Policy
+[!] Missing Permissions-Policy
