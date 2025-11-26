@@ -1,4 +1,4 @@
-# Nmap 7.95 scan initiated Fri Nov 21 06:05:13 2025 as: /usr/lib/nmap/nmap -sS -sV -p- --script=http-title,http-headers -oA audit_outputs/nmap srmap.edu.in
+# Nmap 7.95 scan initiated Fri Nov 21 08:22:22 2025 as: /usr/lib/nmap/nmap -sS -sV -p- --script=http-title,http-headers -oA audit_outputs/nmap srmap.edu.in
 Host: 15.207.40.200 (ec2-15-207-40-200.ap-south-1.compute.amazonaws.com)	Status: Up
 Host: 15.207.40.200 (ec2-15-207-40-200.ap-south-1.compute.amazonaws.com)	Ports: 80/open/tcp//http//AWS Elastic Load Balancing/, 443/open/tcp//ssl|http//Apache httpd 2.4.62 ((CentOS Stream) OpenSSL|3.5.1 PHP|8.2.29)/	Ignored State: filtered (65533)
-# Nmap done at Fri Nov 21 06:22:08 2025 -- 1 IP address (1 host up) scanned in 1014.29 seconds
+# Nmap done at Fri Nov 21 08:39:45 2025 -- 1 IP address (1 host up) scanned in 1042.68 seconds
